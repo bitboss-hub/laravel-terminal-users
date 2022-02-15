@@ -1,24 +1,24 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "bitboss/manageterminalusers",
+    "description": "This is my package manageterminalusers",
     "keywords": [
-        ":vendor_name",
+        "BitBoss",
         "laravel",
-        ":package_slug"
+        "manageterminalusers"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/bitboss/manageterminalusers",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Riccardo Barbotti",
+            "email": "riccardo@bitboss.it",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.0",
         "spatie/laravel-package-tools": "^1.9.2",
-        "illuminate/contracts": "^9.0"
+        "illuminate/contracts": "^8.0|^9.0"
     },
     "require-dev": {
         "nunomaduro/collision": "^6.0",
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "BitBoss\\ManageTerminalUsers\\": "src",
+            "BitBoss\\ManageTerminalUsers\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "BitBoss\\ManageTerminalUsers\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "BitBoss\\ManageTerminalUsers\\ManageTerminalUsersServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "ManageTerminalUsers": "BitBoss\\ManageTerminalUsers\\Facades\\ManageTerminalUsers"
             }
         }
     },

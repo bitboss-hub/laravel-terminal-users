@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace BitBoss\ManageTerminalUsers;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use BitBoss\ManageTerminalUsers\Commands\ManageTerminalUsersCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class ManageTerminalUsersServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -15,11 +15,12 @@ class SkeletonServiceProvider extends PackageServiceProvider
          *
          * More info: https://github.com/spatie/laravel-package-tools
          */
+    
         $package
-            ->name('skeleton')
+            ->name('manage-terminal-users')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            //->hasViews()
+            //->hasMigration('create_manageterminalusers_table')
+            ->hasCommand(ManageTerminalUsersCommand::class);
     }
 }

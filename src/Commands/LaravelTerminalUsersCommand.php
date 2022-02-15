@@ -10,6 +10,10 @@ class LaravelTerminalUsersCommand extends Command
     public $signature = 'bitboss:manage-users';
 
     public $description = 'My command';
+    /**
+     * @var \Illuminate\Config\Repository|\Illuminate\Contracts\Foundation\Application|mixed
+     */
+    protected mixed $config;
 
     public function handle(): int
     {

@@ -1,16 +1,16 @@
 <?php
 
-namespace BitBoss\ManageTerminalUsers\Facades;
+namespace BitBoss\LaravelTerminalUsers\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \BitBoss\ManageTerminalUsers\ManageTerminalUsers
+ * @see \BitBoss\LaravelTerminalUsers\LaravelTerminalUsers
  */
-class ManageTerminalUsers extends Facade
+class LaravelTerminalUsers extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'manageterminalusers';
+        return 'LaravelTerminalUsers';
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace BitBoss\ManageTerminalUsers\Database\Factories;
+namespace BitBoss\LaravelTerminalUsers\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

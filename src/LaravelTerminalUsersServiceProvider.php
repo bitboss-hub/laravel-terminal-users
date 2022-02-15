@@ -20,7 +20,7 @@ class LaravelTerminalUsersServiceProvider extends PackageServiceProvider
             ->name('manage-terminal-users')
             ->hasConfigFile()
             //->hasViews()
-            //->hasMigration('create_manageterminalusers_table')
+            //->hasMigration('create_LaravelTerminalUsers_table')
             ->hasCommand(LaravelTerminalUsersCommand::class);
     }
 }

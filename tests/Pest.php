@@ -1,5 +1,5 @@
 <?php
 
-use BitBoss\ManageTerminalUsers\Tests\TestCase;
+use BitBoss\LaravelTerminalUsers\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

@@ -2,9 +2,11 @@
 
 namespace BitBoss\LaravelTerminalUsers\Tests;
 
+
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 use BitBoss\LaravelTerminalUsers\LaravelTerminalUsersServiceProvider;
+
 
 class TestCase extends Orchestra
 {

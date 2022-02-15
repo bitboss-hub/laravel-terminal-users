@@ -6,6 +6,7 @@ use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use BitBoss\LaravelTerminalUsers\Commands\LaravelTerminalUsersCommand;
 
+
 class LaravelTerminalUsersServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
@@ -15,7 +16,7 @@ class LaravelTerminalUsersServiceProvider extends PackageServiceProvider
          *
          * More info: https://github.com/spatie/laravel-package-tools
          */
-    
+
         $package
             ->name('manage-terminal-users')
             ->hasConfigFile()

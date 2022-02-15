@@ -2,10 +2,9 @@
 
 namespace BitBoss\LaravelTerminalUsers;
 
+use BitBoss\LaravelTerminalUsers\Commands\LaravelTerminalUsersCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use BitBoss\LaravelTerminalUsers\Commands\LaravelTerminalUsersCommand;
-
 
 class LaravelTerminalUsersServiceProvider extends PackageServiceProvider
 {

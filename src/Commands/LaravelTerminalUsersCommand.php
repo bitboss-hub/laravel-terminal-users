@@ -21,6 +21,8 @@ class LaravelTerminalUsersCommand extends Command
 
         $user->{$this->config['field_to_update']} = Hash::make($password);
 
+        $user->save();
+
         return self::SUCCESS;
     }
 

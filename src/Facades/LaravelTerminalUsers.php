@@ -11,6 +11,6 @@ class LaravelTerminalUsers extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'LaravelTerminalUsers';
+        return 'laravelterminalusers';
     }
 }

@@ -1,12 +1,12 @@
 {
-    "name": "bitboss/manageterminalusers",
+    "name": "bitboss-hub/laravel-terminal-users",
     "description": "This is my package manageterminalusers",
     "keywords": [
         "BitBoss",
         "laravel",
         "manageterminalusers"
     ],
-    "homepage": "https://github.com/bitboss/manageterminalusers",
+    "homepage": "https://github.com/bitboss-hub/laravel-terminal-users",
     "license": "MIT",
     "authors": [
         {
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "BitBoss\\ManageTerminalUsers\\": "src",
-            "BitBoss\\ManageTerminalUsers\\Database\\Factories\\": "database/factories"
+            "BitBoss\\LaravelTerminalUsers\\": "src",
+            "BitBoss\\LaravelTerminalUsers\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BitBoss\\ManageTerminalUsers\\Tests\\": "tests"
+            "BitBoss\\LaravelTerminalUsers\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BitBoss\\ManageTerminalUsers\\ManageTerminalUsersServiceProvider"
+                "BitBoss\\LaravelTerminalUsers\\LaravelTerminalUsersServiceProvider"
             ],
             "aliases": {
-                "ManageTerminalUsers": "BitBoss\\ManageTerminalUsers\\Facades\\ManageTerminalUsers"
+                "LaravelTerminalUsers": "BitBoss\\LaravelTerminalUsers\\Facades\\LaravelTerminalUsers"
             }
         }
     },

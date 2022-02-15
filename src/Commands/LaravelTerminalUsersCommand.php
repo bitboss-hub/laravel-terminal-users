@@ -1,11 +1,11 @@
 <?php
 
-namespace BitBoss\ManageTerminalUsers\Commands;
+namespace BitBoss\LaravelTerminalUsers\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
 
-class ManageTerminalUsersCommand extends Command
+class LaravelTerminalUsersCommand extends Command
 {
     public $signature = 'bitboss:manage-users';
 
@@ -50,7 +50,7 @@ class ManageTerminalUsersCommand extends Command
         if ($this->isValidPassword($password)) {
             return $password;
         }
-        
+
         $this->warn('Password not valid.');
 
         return $this->promptForPassword($user);

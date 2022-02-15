@@ -1,12 +1,12 @@
 <?php
 
-namespace BitBoss\ManageTerminalUsers;
+namespace BitBoss\LaravelTerminalUsers;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use BitBoss\ManageTerminalUsers\Commands\ManageTerminalUsersCommand;
+use BitBoss\LaravelTerminalUsers\Commands\LaravelTerminalUsersCommand;
 
-class ManageTerminalUsersServiceProvider extends PackageServiceProvider
+class LaravelTerminalUsersServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -21,6 +21,6 @@ class ManageTerminalUsersServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             //->hasViews()
             //->hasMigration('create_manageterminalusers_table')
-            ->hasCommand(ManageTerminalUsersCommand::class);
+            ->hasCommand(LaravelTerminalUsersCommand::class);
     }
 }

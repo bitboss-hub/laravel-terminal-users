@@ -32,15 +32,16 @@ class ManageTerminalUsersCommand extends Command
 
         $query = $model::query();
 
-        if (!$query->where($this->config['field_to_check'], $value)->exists()) {
+        if (! $query->where($this->config['field_to_check'], $value)->exists()) {
             $this->warn('No user found. Try again');
+
             return $this->askForEmail();
         }
 
         $user = $query->where($this->config['field_to_check'], $value)->first();
         $this->info("Great! I found {$user->{$this->config['field_to_check']}}");
-        return $user;
 
+        return $user;
     }
 
     private function promptForPassword($user)
@@ -50,11 +51,10 @@ class ManageTerminalUsersCommand extends Command
         if ($this->isValidPassword($password)) {
             return $password;
         }
-        
+
         $this->warn('Password not valid.');
 
         return $this->promptForPassword($user);
-
     }
 
     private function isValidPassword($password)

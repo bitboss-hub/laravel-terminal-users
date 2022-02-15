@@ -2,9 +2,9 @@
 
 namespace BitBoss\ManageTerminalUsers;
 
+use BitBoss\ManageTerminalUsers\Commands\ManageTerminalUsersCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use BitBoss\ManageTerminalUsers\Commands\ManageTerminalUsersCommand;
 
 class ManageTerminalUsersServiceProvider extends PackageServiceProvider
 {
@@ -15,7 +15,7 @@ class ManageTerminalUsersServiceProvider extends PackageServiceProvider
          *
          * More info: https://github.com/spatie/laravel-package-tools
          */
-    
+
         $package
             ->name('manage-terminal-users')
             ->hasConfigFile()

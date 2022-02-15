@@ -2,9 +2,9 @@
 
 namespace BitBoss\ManageTerminalUsers\Tests;
 
+use BitBoss\ManageTerminalUsers\ManageTerminalUsersServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use BitBoss\ManageTerminalUsers\ManageTerminalUsersServiceProvider;
 
 class TestCase extends Orchestra
 {

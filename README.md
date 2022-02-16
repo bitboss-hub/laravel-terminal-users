@@ -54,9 +54,26 @@ This is the contents of the published config file:
 
 ## Usage
 
+You can call the Command using:
+
 ```php
 > php artisan bitboss:manage-users
 ```
+
+Then, follow the instructions of the script.
+
+```
+ What's the user's email?:
+ > ...
+ ```
+Prompt the email, or the other field defined in `field_to_check` configuration.
+ ```
+  Ok, now choose a password:
+ > ...
+ ````
+
+ Prompt a password for the user found.
+ 
 
 ## Testing
 

@@ -11,11 +11,18 @@ return [
      */
     'field_to_update' => 'password',
 
+    /**
+     * Should the password be encrypted? Default value: hash. Possible values: plain
+     */
     'hash' => 'hash',
 
+    /**
+     * Which is the authenticable model? If null, we get it from the auth configuration
+     */
     'model' => null,
 
-    'validation' => null,
-
-
+    /**
+     * Express optional password validation using Laravel Validation syntax
+     */
+    'validation' => null
 ];

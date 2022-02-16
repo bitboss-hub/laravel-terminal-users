@@ -1,10 +1,10 @@
 {
     "name": "bitboss-hub/laravel-terminal-users",
-    "description": "This is my package manageterminalusers",
+    "description": "This package provides some functionalities to manage your users from Laravel CLI",
     "keywords": [
         "BitBoss",
-        "laravel",
-        "manageterminalusers"
+        "Laravel",
+        "Artisan"
     ],
     "homepage": "https://github.com/bitboss-hub/laravel-terminal-users",
     "license": "MIT",
@@ -18,7 +18,7 @@
     "require": {
         "php": "^8.0",
         "spatie/laravel-package-tools": "^1.9.2",
-        "illuminate/contracts": "^8.0|^9.0"
+        "illuminate/contracts": "^7.0 | ^8.0 | ^9.0"
     },
     "require-dev": {
         "nunomaduro/collision": "^6.0",
